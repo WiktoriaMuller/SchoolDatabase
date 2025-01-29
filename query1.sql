@@ -1,3 +1,3 @@
--- create a database
+-- Creating a database.
 
 CREATE DATABASE Szkola;
