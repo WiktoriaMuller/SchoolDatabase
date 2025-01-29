@@ -3,6 +3,8 @@
 
 USE Szkola;
 
+-- Creating the "Klasa" table to store class details.
+
 CREATE TABLE Klasa
 (
 	Nazwa VARCHAR(8),
@@ -12,7 +14,9 @@ CREATE TABLE Klasa
 	IDKlasy INT PRIMARY KEY IDENTITY(1,1)
 )
 
-CREATE TABLE Uczen
+-- Creating the "Uczen" (Student) table to store student details.
+	
+	CREATE TABLE Uczen
 (
 	PESEL VARCHAR(11) PRIMARY KEY,
 	Imie VARCHAR(32),
@@ -27,6 +31,8 @@ CREATE TABLE Uczen
 	FOREIGN KEY (IDKlasy) REFERENCES Klasa(IDKlasy)
 )
 
+-- Creating the "Nauczyciel" (Teacher) table to store teacher details.
+	
 CREATE TABLE Nauczyciel
 (
 	PESEL VARCHAR(11) PRIMARY KEY,
@@ -42,6 +48,8 @@ CREATE TABLE Nauczyciel
 	UNIQUE (PESEL)
 )
 
+-- Creating the "Przedmiot" (Subject) table to store details about subjects taught in the school.
+
 CREATE TABLE Przedmiot
 (
 	Nazwa VARCHAR(64),
@@ -51,6 +59,8 @@ CREATE TABLE Przedmiot
 	LiczbaGodzin INT,
 	IDPrzedmiotu INT PRIMARY KEY IDENTITY(1,1),
 )
+
+-- Creating the "Lekcja" (Lesson) table to store details about individual lessons.
 
 CREATE TABLE Lekcja
 (
@@ -67,6 +77,9 @@ CREATE TABLE Lekcja
 	FOREIGN KEY (IDPrzedmiotu) REFERENCES Przedmiot(IDPrzedmiotu)
 		ON DELETE CASCADE
 )
+
+-- Creating the "NauczycielKlasa" (Teacher-Class Relationship) table.
+-- This table establishes a many-to-many relationship between teachers and classes.
 
 CREATE TABLE NauczycielKlasa
 (	
