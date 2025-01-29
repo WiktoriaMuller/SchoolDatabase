@@ -3,15 +3,10 @@
 ## Overview
 This repository contains SQL scripts for managing a school database named Szkola. The scripts include table creation, data insertion, updates, deletions, queries, and views to facilitate the organization of students, teachers, classes, lessons, and subjects.
 
-## Database structure
+## Requirements
 
-The database consists of the following tables:
-* **Klasa** - Stores information about school classes.
-* **Uczen** - Contains student records with personal and class-related data.
-* **Nauczyciel** - Stores teacher information, including specialization and contact details.
-* **Przedmiot** - Represents school subjects with related requirements and scope.
-* **Lekcja** - Manages lesson schedules and links them to classes, teachers, and subjects.
-* **NauczycielKlasa** - Establishes relationships between teachers and classes.
+* Microsoft SQL Server 
+* SQL Server Management Studio
 
 ## SQL operations
 
@@ -30,3 +25,7 @@ The scripts include:
 3. Insert sample data to populate the tables.
 4. Execute update, delete, or select queries as needed.
 5. Utilize views for reporting and analysis.
+
+## License
+
+This project is open-source and can be used for educational or development purposes.
