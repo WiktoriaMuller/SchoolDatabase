@@ -1,4 +1,4 @@
-# SchoolDatabase - SQL Scripts
+# School Database - SQL Scripts
 
 ## Overview
 This repository contains SQL scripts for managing a school database named Szkola. The scripts include table creation, data insertion, updates, deletions, queries, and views to facilitate the organization of students, teachers, classes, lessons, and subjects.
