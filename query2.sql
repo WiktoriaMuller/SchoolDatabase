@@ -1,3 +1,6 @@
+-- Creating a database schema for a school management system in the "Szkola" database.
+-- It defines tables for classes, students, teachers, subjects, lessons, and the relationships between them.
+
 USE Szkola;
 
 CREATE TABLE Klasa
