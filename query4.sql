@@ -10,7 +10,7 @@ WHERE PESEL = '27071138908';
 
 UPDATE Lekcja
 SET Data = CONVERT(DATETIME, '02-01-2025 10:15', 104)
-WHERE Temat = 'Budowa komórki roœlinnej i zwierzêcej';
+WHERE Temat = 'Budowa komÃ³rki roÅ›linnej i zwierzÄ™cej';
 
 UPDATE Uczen
 SET DataUrodzenia = CONVERT(DATETIME, '15-05-2008', 104)
@@ -29,5 +29,3 @@ WHERE Temat = 'Zasady dynamiki Newtona';
 
 DELETE FROM Przedmiot
 WHERE Nazwa = 'Plastyka';
-
----doda³am ON DELETE CASCADE we wczeœniejszym pliku, dlatego on równie¿ jest za³¹czony
