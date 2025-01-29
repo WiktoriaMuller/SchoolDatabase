@@ -16,10 +16,10 @@ The database consists of the following tables:
 ## SQL operations
 
 The scripts include:
-1. Database Creation (`CREATE DATABASE`).
-2. Table Creation (`CREATE TABLE`).
-3. Data Insertion (`INSERT INTO`).
-4. Data Modification (`UPDATE`) and Data Deletion (`DELETE`).
+1. Database creation (`CREATE DATABASE`).
+2. Table creation (`CREATE TABLE`).
+3. Data insertion (`INSERT INTO`).
+4. Data modification (`UPDATE`) and data deletion (`DELETE`).
 5. Queries (`SELECT`).
 6. Views (`CREATE VIEW`).
 
